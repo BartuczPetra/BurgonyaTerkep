@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bartucz Petra</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" type="image/x-icon" href="/images/favicon.png">
+</head>
+
+<body>
+  <div class="rowDiv">
+    <div id="headline">
+      <h1>Burgonya térkép</h1>
+    </div>
+    <div>
+      <table id="seasonsTable">
+        <tr>
+          <td class="tavasz">Tavasz: <br><b>0</b> pont</td>
+          <td class="nyar">Nyár: <br><b>0</b> pont</td>
+          <td class="osz">Ősz: <br><b>0</b> pont</td>
+          <td class="tel">Tél: <br><b>0</b> pont</td>
+        </tr>
+        <tr>
+          <th id="score" colspan="4">Összesen: <b>0</b> pont</th>
+        </tr>
+      </table>
+    </div>
+  </div>
+  <div class="rowDiv" id="mainDiv">
+    <div id="gameDiv">
+      <table id="gameTable"></table>
+    </div>
+    <div id="gameSide">
+      <h2>Játékból hátralevő idő: <b id="gameTime">28</b>/28</h2>
+      <h3>Jelenlegi évszak: <b id="seasonName">Tavasz</b></h3>
+      <hr>
+      <div id="missionsDiv">
+      </div>
+      <div id="inGameDiv">
+        <h3>Évszakokból hátralevő idő: <b id="seasonTime">7</b>/7</h3>
+        <hr>
+        <h3>Lehelyezendő elem:</h3>
+        <div class="rowDiv" id="elementDiv">
+          <div id="buttonGroup">
+            <button id="rotationBtn">Forgatás</button>
+            <button id="mirrorBtn">Tükrözés</button>
+          </div>
+          <div id="elementContainer">
+            <table id="elementTable" draggable="true"></table>
+            <div id="elementTime"><b>0</b><img src="images/clock.png" alt="clock">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
